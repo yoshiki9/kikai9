@@ -1,0 +1,10 @@
+plt.imshowとsns.heatmapはどちらが良い?
+
+gacco datasource
+
+astype(int)
+
+pairplotの形で、横構成比グラフ。
+χ二乗のヒートマップ。
+ヒートマップの構成比。
+
