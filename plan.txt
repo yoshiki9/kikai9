@@ -8,3 +8,6 @@ pairplotの形で、横構成比グラフ。
 χ二乗のヒートマップ。
 ヒートマップの構成比。
 
+階層indexは、集計表出力に使える。
+http://www.tsjshg.info/udemy/Lec24.html
+
