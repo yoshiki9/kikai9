@@ -1,0 +1,53 @@
+nanは除くか埋める。
+from sklearn.preprocessing import Imputer
+平均値
+中央値
+
+外れ値は除くか置き換える。
+
+χ二乗で特徴選択
+
+特徴量を非線形にするよりは、非線形な識別器を使う方が良い。
+特徴量は、線形まで。
+
+標準化
+trainの平均と分散を使って、testを標準化する。
+
+最大最小をある範囲に収める。
+
+正規化
+サンプルごとに、ノルムを1にする。
+
+PCA白色化
+PCA(無相関)+標準化
+
+ZCA白色化(ディープラーニングの画像認識で良く使われる。)
+PCA白色化後、元の座標系に戻す(逆回転)。
+
+
+評価方法
+混合行列(TP, TN, FP, FN)
+precision, recall, f-value
+0と1では間違うことの重要性が違うので、混合行列を観る。
+どのラベルが苦手なのかもわかる。
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import classification_report ← 表示するだけ
+from sklearn.metrics import precision_recall_fscore_support ← 値を受け取れる
+precision_recall_fscore_support(y_test, y_pred, beta=1)
+from sklearn.metrics import roc_curve, auc, average_precision_score, precision_recall_curve
+average precision
+mean average precision
+
+GridSearchCVは、デフォルトで3foldCVの結果をscoreで返す。
+
+マージン部分は、コストあり。
+0から離れた正部分がマージン
+SVMは、確率モデルではない。
+平面からの距離をシグモイド関数に入れることで、便宜的な確率がわかるだけ。厳密には、確率ではない。
+
+SVMは、まずlinear
+polyは、特徴量を多項式にすることに相当。
+
+グリッドサーチを並列に計算するために，レクチャーで使用しているnotebook中ではn_jobs=-1 と指定しています．しかしこれではすべてのCPUを使って計算するため，マシンパワーが小さいパソコンではフリーズしてしまう可能性もあります．その場合には，実行する前にn_jobs=1 などに変更してください（数字は並列計算の数です）．
+
+LinearSVCの方が速い
