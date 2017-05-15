@@ -17,5 +17,7 @@ http://www.tsjshg.info/udemy/Lec24.html
 特徴はテーブルにしておく。
 
 print('This is the {} group'.format(name))
-
+print("{0} / {1} = {2}".format(wrong,
+                               n_test, 
+                               1 - wrong / n_test ))
 
