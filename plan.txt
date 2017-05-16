@@ -14,10 +14,4 @@ http://www.tsjshg.info/udemy/Lec24.html
 
 納品リストは、値から文字に戻す。
 
-特徴はテーブルにしておく。
-
-print('This is the {} group'.format(name))
-print("{0} / {1} = {2}".format(wrong,
-                               n_test, 
-                               1 - wrong / n_test ))
 
