@@ -1,29 +1,6 @@
-
-
-
-
-
-
-標準化
-trainの平均と分散を使って、testを標準化する。
-
-最大最小をある範囲に収める。
-
-正規化
-サンプルごとに、ノルムを1にする。
-
-PCA白色化
-PCA(無相関)+標準化
-
-ZCA白色化(ディープラーニングの画像認識で良く使われる。)
-PCA白色化後、元の座標系に戻す(逆回転)。
-
-
 評価方法
 混合行列(TP, TN, FP, FN)
 precision, recall, f-value
-0と1では間違うことの重要性が違うので、混合行列を観る。
-どのラベルが苦手なのかもわかる。
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import classification_report ← 表示するだけ
 from sklearn.metrics import precision_recall_fscore_support ← 値を受け取れる
