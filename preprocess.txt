@@ -1,0 +1,15 @@
+import pandas as pd
+from pandas import Series,DataFrame
+import numpy as np
+
+import matplotlib.pyplot as plt
+import seaborn as sns
+sns.set_style('whitegrid')
+%matplotlib inline
+
+# seabornの日本語表示
+# IPAGothicをインストール。
+# 「~/.matplotlib/fontList.py3k.cache」を消す。
+import matplotlib as mpl
+mpl.rcParams['font.family'] = 'IPAGothic'
+sns.set(font=['IPAGothic'])

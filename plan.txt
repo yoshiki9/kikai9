@@ -1,17 +1,9 @@
-plt.imshowとsns.heatmapはどちらが良い?
+py分析
+実践 Python データサイエンス
+lec14
 
-gacco datasource
-
-pairplotの形で、横構成比グラフ。
-χ二乗のヒートマップ。
-ヒートマップの構成比。
-
-階層indexは、集計表出力に使える。
-http://www.tsjshg.info/udemy/Lec24.html
-
-複数回答
-カンマを列に展開する。
-
-納品リストは、値から文字に戻す。
+py機械
+Pythonで機械学習：scikit-learnで学ぶ識別入門
+09-01
 
 
