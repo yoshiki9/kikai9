@@ -36,7 +36,12 @@ polyは、特徴量を多項式にすることに相当。
 
 グリッドサーチを並列に計算するために，レクチャーで使用しているnotebook中ではn_jobs=-1 と指定しています．しかしこれではすべてのCPUを使って計算するため，マシンパワーが小さいパソコンではフリーズしてしまう可能性もあります．その場合には，実行する前にn_jobs=1 などに変更してください（数字は並列計算の数です）．
 
-LinearSVCの方が速い
+SVM(kernel="linear")を使うのならば、LinearSVCの方が速くて良い。
+clf = LinearSVC() # dual
+clf = LinearSVC(dual=False) # primal 特徴量の次元が小さくて、サンプルが多い場合。
+SGDClassifierは、より速い。
+clf = SGDClassifier(loss="log") # Logistic regression
+clf = SGDClassifier(loss="hinge") # linear SVM
 
 差があるとき
 全体的な差か
