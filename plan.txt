@@ -9,18 +9,22 @@ Pythonによるスクレイピング&機械学習システム
 Pythonによるデータ分析入門
 
 統計分析
-    py実践
-        実践 Python データサイエンス lec14
+    実践
+        実践 Python データサイエンス lec25
         Pythonで体験するベイズ推論
+    理論
+        データ解析のための統計モデリング入門
+        
+        
         
 機械学習
-    py実践
+    実践
         Python機械学習プログラミング
+        
         Pythonで機械学習：scikit-learnで学ぶ識別入門
         実践 機械学習システム
         TensorFlow x Python 3 で学ぶディープラーニング
     理論
-        モデリング
         一般化線形モデル入門
         はじめてのパターン認識
         computer Vision Models
